@@ -1,0 +1,21 @@
+{
+  "name": "beer-me",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "mocha || true"
+  },
+  "author": "Stephen Delisle",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.3",
+    "memory-cache": "^0.2.0",
+    "nosql": "^6.1.0",
+    "request": "^2.85.0"
+  },
+  "devDependencies": {
+    "chai": "*",
+    "mocha": "*"
+  }
+}

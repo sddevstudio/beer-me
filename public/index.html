@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+    <title>--==[BeerMe]==--</title>
+    <style>
+        body{font-family: Helvetica;}
+        pre {background:#eee;padding:0.5rem 1rem;display:inline-block;}
+    </style>
+</head>
+<body>
+    <h3>Search for beer name</h3>
+    <pre>GET: /beer?name=<strong>beername</strong></pre>
+    <p>Returns: JSON object</p>
+    <pre>[
+    {
+        "id": <strong>id</strong>,
+        "name": <strong>beer name</strong>,
+        "description": <strong>beer description</strong>,
+        "first_brewed": <strong>when beer was first brewed</strong>
+    }
+]   </pre>
+    <hr />
+    <h3>Rate a beer</h3>
+    <pre>POST: /ratebeer?id=<strong>beerid</strong></pre>
+    <p>Include JSON object in the body</p>
+    <pre>{
+    rating:<strong>range 1-5</strong>,
+    comment:<strong>comment</strong>
+}    </pre>
+    <p>Returns: JSON object</p>
+    <pre>[
+    {
+        "id": <strong>id</strong>,
+        "success": <strong>indicates success</strong>,
+        "error": <strong>if success fails it will display an error</strong>
+    }
+]   </pre>
+    <hr />
+</body>
+</html>
